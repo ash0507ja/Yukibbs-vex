@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英単語レベル</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</head>
+<body>
+  <a href="#" class="gotop">トップへ</a>
+    <header>
+  	<h1 class="headline">
+      <a>YukiBBS</a>
+    </h1>
+    <ul class="nav-list">
+      <li class="nav-list-item"><a href="/">Home</a></li>
+      <li class="nav-list-item"><a href="/use">How to Use?</a></li>
+      <li class="nav-list-item"><a href="/widgetbot">Discord</a></li>
+            <li class="nav-list-item"><a href="/url">URL</a></li>
+    </ul>
+  </header>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
